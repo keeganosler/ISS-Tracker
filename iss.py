@@ -3,6 +3,7 @@
 import json
 import turtle
 import urllib.request
+import time
 
 ## PRINT OUT STATS ABOUT THE ASTRONAUTS CURRENTLY IN SPACE
 
@@ -28,8 +29,8 @@ response = urllib.request.urlopen(url)
 result = json.loads(response.read())
 
 location = result['iss_position']
-latitude = location['latitude']
-longitude = location['longitude']
+latitude = float(location['latitude'])
+longitude = float(location['longitude'])
 
 print('Latitude: ', latitude)
 print('Longitude: ', longitude)
@@ -38,11 +39,11 @@ print('Longitude: ', longitude)
 screen = turtle.Screen()
 screen.setup(720, 360)
 screen.setworldcoordinates(-180, -90, 180, 90)
-screen.bgpic('/images/map.gif')
+screen.bgpic('map.gif')
 
-screen.register_shape('iss.png')
+screen.register_shape('iss.gif')
 iss = turtle.Turtle()
-iss.shape('iss.png')
+iss.shape('iss.gif')
 iss.setheading(90)
 
 iss.penup()
@@ -72,3 +73,5 @@ passover = result['response'][1]['risetime']
 
 style = ('Arial', 6, 'bold')
 location.write(time.ctime(passover), font=style)
+
+screen.exitonclick()
