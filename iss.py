@@ -74,4 +74,17 @@ passover = result['response'][1]['risetime']
 style = ('Arial', 6, 'bold')
 location.write(time.ctime(passover), font=style)
 
+infobox = turtle.Turtle()
+infobox.color('yellow')
+infobox.penup()
+infobox.goto(-170, -60)
+infobox.hideturtle()
+style = ('Arial', 6, 'bold')
+
+url = 'http://api.open-notify.org/astros.json'
+response = urllib.request.urlopen(url)
+result = json.loads(response.read())
+
+infobox.write('Currently there are '+str(result['number'])+' people aboard the ISS!', font=style)
+
 screen.exitonclick()
