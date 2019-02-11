@@ -33,3 +33,17 @@ longitude = location['longitude']
 
 print('Latitude: ', latitude)
 print('Longitude: ', longitude)
+
+##load world map as the background image using turtle graphics library
+screen = turtle.Screen()
+screen.setup(720, 360)
+screen.setworldcoordinates(-180, -90, 180, 90)
+screen.bgpic('map.jpg')
+
+screen.register_shape('iss.png')
+iss = turtle.Turtle()
+iss.shape('iss.png')
+iss.setheading(90)
+
+iss.penup()
+iss.goto(longitude, latitude)
