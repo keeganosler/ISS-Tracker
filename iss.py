@@ -58,8 +58,8 @@ latitude = 51.048615
 longitude = -114.070847
 
 location = turtle.Turtle()
-location.penup
 location.color('yellow')
+location.penup()
 location.goto(longitude, latitude)
 location.dot(5)
 location.hideturtle()
