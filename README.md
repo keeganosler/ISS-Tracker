@@ -11,6 +11,6 @@ The app also gives the user the ability to determine when the ISS will next pass
 ![screenshot](https://github.com/keeganosler/ISS-Tracker/blob/master/readme%20images/passover.JPG)
 
 
-##Acknowledgements
+## Acknowledgements
 
 This project was inspired by the Code Club [Where is the Space Station?](https://codeclubprojects.org/en-GB/python/iss/) project and uses the ISS API by [natronics](https://github.com/natronics).
