@@ -1,6 +1,6 @@
 # ISS-Tracker
 
-This project uses python, the Turtle Graphics library and the ISS API to plot and track the location of the International Space Station (ISS).  The project is hosted as a web app by embedding Trinket.io code into the index HTML.
+This project uses Python3, the Turtle Graphics library and the ISS API to plot and track the location of the International Space Station (ISS).  The project is hosted as a web app by embedding Trinket.io code into the index HTML.
 
 First, python is connected to the ISS API to find information on the current location of the ISS and plot it on a world map as shown below.
 
