@@ -41,7 +41,6 @@ style = ('Arial', 6, 'bold')
 curr.write('Current: '+str(longitude)+', '+str(latitude), font=style)
 
 
-
 ## FIND WHEN THE ISS WILL NEXT BE OVER A CERTAIN LOCATION
 
 #read user input coordinates
